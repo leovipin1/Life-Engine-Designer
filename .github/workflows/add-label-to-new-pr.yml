@@ -1,0 +1,16 @@
+name: Add Label to New PR
+
+on:
+  pull_request:
+    types: 
+      - opened
+
+jobs:
+  add-label-to-new-pr:
+    name: Add Label to New PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: leovipin1/add-label-to-issue-pr@master
+        with:
+          add-labels: 'Category: PullRequest, Status: Backlog'
+          repo-token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }}

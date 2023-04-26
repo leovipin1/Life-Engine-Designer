@@ -1,0 +1,17 @@
+name: Add Label to Assigned Issue
+
+on:
+  issues:
+    types: 
+      - assigned
+
+jobs:
+  add-label-to-assigned-issue:
+    name: Add Label to Assigned Issue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: leovipin1/add-label-to-issue-pr@master
+        with:
+          add-labels: 'Status: Developing'
+          remove-labels: 'Status: Backlog, Status: Incomplete'
+          repo-token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }}

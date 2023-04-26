@@ -1,0 +1,16 @@
+name: Add Label to New Issue
+
+on:
+  issues:
+    types: 
+      - opened
+
+jobs:
+  add-label-to-new-issue:
+    name: Add Label to New Issue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: leovipin1/add-label-to-issue-pr@master
+        with:
+          add-labels: 'Category: Issue, Status: Incomplete, Status: Backlog'
+          repo-token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }}

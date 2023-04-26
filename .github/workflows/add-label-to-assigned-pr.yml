@@ -1,0 +1,17 @@
+name: Add Label to Assigned PR
+
+on:
+  pull_request:
+    types: 
+      - assigned
+
+jobs:
+  add-label-to-assigned-pr:
+    name: Add Label to Assigned PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: leovipin1/add-label-to-issue-pr@master
+        with:
+          add-labels: 'Status: Developing'
+          remove-labels: 'Status: Backlog'
+          repo-token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }}
