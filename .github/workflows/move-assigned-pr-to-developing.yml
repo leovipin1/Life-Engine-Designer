@@ -1,0 +1,19 @@
+name: Move Assigned PR to Developing
+
+on:
+  pull_request:
+    types:
+      - assigned
+
+jobs:
+  move-assigned-pr-to-developing:
+    name: Move Assigned PR to Developing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: leovipin1/move-issue-pr-developing@main
+        with:
+          gh_token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }}
+          user: leovipin1
+          project_id: 16
+          resource_node_id: ${{ github.event.pull_request.node_id }}
+          status_value: Developing

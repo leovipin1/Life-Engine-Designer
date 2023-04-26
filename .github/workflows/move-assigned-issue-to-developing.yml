@@ -1,0 +1,19 @@
+name: Move Assigned Issue to Developing
+
+on:
+  issues:
+    types:
+      - assigned
+
+jobs:
+  move-assigned-issue-to-developing:
+    name: Move Assigned Issue to Developing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: leovipin1/move-issue-pr-developing@main
+        with:
+          gh_token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }}
+          user: leovipin1
+          project_id: 16
+          resource_node_id: ${{ github.event.issue.node_id }}
+          status_value: Developing

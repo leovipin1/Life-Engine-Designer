@@ -1,0 +1,34 @@
+version: v1
+
+labels:
+  - label: "Type: Feature"
+    matcher:
+      title: "^.*\\[Feature]:.*"
+  
+  - label: "Type: UserStory"
+    matcher:
+      title: "^.*\\[UserStory]:.*"
+
+  - label: "Type: Task"
+    matcher:
+      title: "^.*\\[Task]:.*"
+
+  - label: "Type: Bug"
+    matcher:
+      title: "^.*\\[Bug]:.*"
+
+  - label: "Type: Epic"
+    matcher:
+      title: "^.*\\[Epic]:.*"
+  
+  - label: "Type: Documentation"
+    matcher:
+      title: "^.*\\[Documentation]:.*"
+
+  - label: "Type: Repo"
+    matcher:
+      title: "^.*\\[Repo]:.*"
+
+  - label: "Type: Miscellaneous"
+    matcher:
+      title: "^.*\\[Misc]:.*"

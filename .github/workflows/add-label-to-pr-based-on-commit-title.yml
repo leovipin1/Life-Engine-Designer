@@ -1,0 +1,17 @@
+name: Add Label to PR based on Commit Title
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-label-to-pr-based-on-commit-title:
+    name: Add Label to PR based on Commit Title
+    runs-on: ubuntu-latest
+    steps:
+      # follows semantic versioning. Lock to different version: v1, v1.5, v1.5.0 or use a commit hash.
+      - uses: leovipin1/label-issue-pr-based-on-content@main
+        with:
+          github-token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }} # optional, default to '${{ github.token }}'  
+          config-path: .github/commit-title-pr-labeler.yml # optional, default to '.github/labeler.yml'

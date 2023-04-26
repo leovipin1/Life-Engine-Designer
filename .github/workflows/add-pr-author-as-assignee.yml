@@ -1,0 +1,15 @@
+name: Assign PR Author as Assignee
+
+on:  
+  pull_request:
+    types:
+      - opened
+     
+jobs:
+  assign-pr-author-as-assignee:
+    name: Assign PR Author as Assignee
+    runs-on: ubuntu-latest
+    steps:
+    - uses: leovipin1/assign-pr-author-as-assignee@latest
+      with:
+        token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }}

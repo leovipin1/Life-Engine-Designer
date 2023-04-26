@@ -1,0 +1,38 @@
+version: v1
+
+labels:
+  - label: "Type: Epic"
+    matcher:
+      commits: "^ep:*"
+
+  - label: "Type: Feature"
+    matcher:
+      commits: "^ft:*"
+  
+  - label: "Type: UserStory"
+    matcher:
+      commits: "^us:*"
+
+  - label: "Type: Task"
+    matcher:
+      commits: "^tk:*"
+
+  - label: "Type: BugFix"
+    matcher:
+      commits: "^bf:*"
+
+  - label: "Type: HotFix"
+    matcher:
+      commits: "^hf:*"
+  
+  - label: "Type: Documentation"
+    matcher:
+      commits: "^dc:*"
+
+  - label: "Type: Repo"
+    matcher:
+      commits: "^rp:*"
+
+  - label: "Type: Miscellaneous"
+    matcher:
+      commits: "^ms:*"

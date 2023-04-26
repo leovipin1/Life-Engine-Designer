@@ -1,0 +1,17 @@
+name: Add Label to Issue based on Title
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-label-to-issue-based-on-title:
+    name: Add Label to Issue based on Title
+    runs-on: ubuntu-latest
+    steps:
+      # follows semantic versioning. Lock to different version: v1, v1.5, v1.5.0 or use a commit hash.
+      - uses: leovipin1/label-issue-pr-based-on-content@main
+        with:
+          github-token: ${{ secrets.LIFE_ENGINE_DESIGNER_SECRET }} # optional, default to '${{ github.token }}'  
+          config-path: .github/title-issue-labeler.yml # optional, default to '.github/labeler.yml'
