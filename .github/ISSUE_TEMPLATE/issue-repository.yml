@@ -1,0 +1,15 @@
+name: Repository
+description: Submit a Repository update request!!!!!
+title: "🗃️ [Repo]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this Repository update form!!!!!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of what needs to be updated in the repository!!!!!
+      placeholder: Describe the update in detail
+    validations:
+      required: true

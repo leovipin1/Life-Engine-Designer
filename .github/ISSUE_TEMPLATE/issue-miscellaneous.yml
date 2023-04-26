@@ -1,0 +1,12 @@
+name: Miscellaneous
+description: Submit a request which cannot be categorized in any of the other issue types!!!!!
+title: "🤔 [Misc]: "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of what needs to be done!!!!!
+      placeholder: Describe the work in detail
+    validations:
+      required: true

@@ -1,0 +1,30 @@
+name: Task
+description: Submit a Task to be worked on!!!!!
+title: "📝 [Task]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this Task form!!!!!
+  - type: textarea
+    id: userstory
+    attributes:
+      label: Related User Story
+      description: Specify the User Story to which this Task is related!!!!!
+      placeholder: Enter the related User Story issue number
+      value: |
+        - #[User Story]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of what needs to be achieved in this Task!!!!!
+      placeholder: Describe the Task in detail
+    validations:
+      required: true

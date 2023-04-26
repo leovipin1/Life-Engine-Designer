@@ -1,0 +1,53 @@
+name: Feature
+description: Submit a Feature!!!!!
+title: "✨ [Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this Feature form!!!!!
+  - type: textarea
+    id: epic
+    attributes:
+      label: Related Epic
+      description: Specify the Epic to which this Feature is related!!!!!
+      placeholder: Enter the related Epic issue number
+      value: |
+        - #[Related Epic]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the Feature!!!!!
+      placeholder: Tell us what you want to see
+      value: |
+        ***Benefit Hypothesis:***
+        [Proposed measurable benefit to the end-user]
+
+        ***Acceptance Criteria:***
+        [Mention the criterias that would make this Feature acceptable]
+
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: userstories
+    attributes:
+      label: Related User Stories
+      description: The list of related User Stories for this Feature!!!!!
+      value: |
+        List of related User Stories
+        - [ ] #[Related User Story]
+        - [ ] #[Related User Story]
+        - [ ] #[Related User Story]
+    validations:
+      required: true
