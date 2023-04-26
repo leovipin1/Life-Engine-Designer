@@ -1,0 +1,30 @@
+name: Documentation
+description: Submit a Documentation request!!!!!
+title: "📄 [Documentation]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this Documentation request form!!!!!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the information that is to be documented!!!!!
+      placeholder: Describe the information
+      value: |
+        [Documentation information]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: input
+    id: filename
+    attributes:
+      label: Filename
+      description: Provide the name of the file which is to be updated along its full path!!!!!
+      placeholder: Filename with full path
+    validations:
+      required: true

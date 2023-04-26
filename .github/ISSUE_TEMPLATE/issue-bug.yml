@@ -1,0 +1,96 @@
+name: Bug
+description: Submit a Bug report!!!!!
+title: "🐞 [Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this Bug report form!!!!!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a more detailed introduction to the issue itself, and why you consider it to be a Bug!!!!!
+      placeholder: The issue description and the reason of it being a Bug
+      value: |
+        [Issue description]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: expectedbehavior
+    attributes:
+      label: Expected Behavior
+      description: Tell us what should happen!!!!!
+      placeholder: Description of the expected behavior
+      value: |
+        [Expected Behavior]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: actualbehavior
+    attributes:
+      label: Actual Behavior
+      description: Tell us what happens instead!!!!!
+      placeholder: Description of the actual behvaior
+      value: |
+        [Actual Behavior]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a link to a live example, or an unambiguous set of steps to reproduce this Bug!!!!!
+      placeholder: Steps to Reproduce
+      value: |
+        [Steps to Reproduce
+        1. Step 1
+        2. Step 2
+        3. Step 3]
+
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: errorscreenshot
+    attributes:
+      label: Error Screenshot
+      description: Provide the screenshot of the error!!!!!
+      placeholder: Enter the uploaded screenshot link
+      value: |
+        [Place the screenshot link here]
+        
+        ---
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: code
+    attributes:
+      label: Error Code or Log
+      description: Include code to reproduce, if relevant or the error output!!!!!
+      placeholder: Error Code or Logs generated
+      value: |
+        [Error Code or Logs generated]
+      render: VBA
+    validations:
+      required: false

@@ -1,0 +1,58 @@
+name: User Story
+description: Submit a User Story!!!!!
+title: "📇 [UserStory]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this User Story form!
+  - type: textarea
+    id: feature
+    attributes:
+      label: Related Feature
+      description: Specify the Feature to which this User Story is related!!!!!
+      placeholder: Enter the related Feature issue number
+      value: |
+        - #[Related Feature]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Sumamry of the User Story!!!!!
+      placeholder: Summary of the User Story
+      value: |
+        ***User Story summary:***
+        **As a** *[user concerned by the story]*, **I want** *[goal of the story]*, **so that** *[reason for the story]*.
+        
+        ***User Story description:***
+        [A detailed description of the User Story]
+        
+        ***Acceptance criteria:***
+        - [ ] **Given** *[some context]*, **when** *[this action is carried out]*, **then** *[this result happens]*
+        - [ ] **Given** *[some context]*, **when** *[this action is carried out]*, **then** *[this result happens]*
+        - [ ] **Given** *[some context]*, **when** *[this action is carried out]*, **then** *[this result happens]*
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Related Tasks
+      description: The list of related Tasks for this User Story!!!!!
+      value: |
+        List of related Tasks
+        - [ ] #[Related Task]
+        - [ ] #[Related Task]
+        - [ ] #[Related Task]
+    validations:
+      required: true

@@ -1,0 +1,41 @@
+name: Epic
+description: Submit a Epic!!!!!
+title: "🏔️ [Epic]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this Epic form!!!!!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the Epic!!!!!
+      placeholder: Describe the high level idea
+      value: |
+        ***Background:***
+        [Summarise the problem or functionality]
+
+        ***Problem Statement:***
+        [Goals of the Epic or problems being solved]
+
+        ***Requirements:***
+        [Deliverable components of the Epic]
+        
+        ---
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ---
+  - type: textarea
+    id: features
+    attributes:
+      label: Related Features
+      description: The list of related Features for this Epic!!!!!
+      value: |
+        List of related Features
+        - [ ] #[Related Feature]
+        - [ ] #[Related Feature]
+        - [ ] #[Related Feature]
+    validations:
+      required: true
