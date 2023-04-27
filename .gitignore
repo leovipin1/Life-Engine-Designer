@@ -1,0 +1,5 @@
+# Ignore mac folder files
+.DS_Store
+
+# Ignore vscode workspace files
+*.code-workspace
