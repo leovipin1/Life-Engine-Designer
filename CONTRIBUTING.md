@@ -11,6 +11,7 @@ Use the table of contents on the top left corner of this document to get to a sp
 To get an overview of the project, read the **[README](README.md)**. Here are some resources to help you start the Life Engine Designer program.
 
 - **`[Program's initial setup steps](update the link for the initial steps document)`**
+
 - **`[Program's documentation](update the link for program's documentation landing page)`**
 
 ## Getting started
@@ -20,29 +21,50 @@ Check to see what types of contributions we accept before making changes.
 ### Label types
 
 1. **https://github.com/leovipin1/Life-Engine-Designer/labels/Category%3A%20Issue** - *Applied automatically to a new issue when submitted*.
+
 2. **https://github.com/leovipin1/Life-Engine-Designer/labels/Category%3A%20PullRequest** - *Applied automatically to a new pull request when submitted*.
+
 3. **https://github.com/leovipin1/Life-Engine-Designer/labels/Status%3A%20Backlog** - *Applied automatically to a new issue or pull request when submitted and removed automatically when an assignee is assigned to the issue or pull request*.
+
 4. **https://github.com/leovipin1/Life-Engine-Designer/labels/Status%3A%20Closed** - *Applied automatically to an issue or pull request when they are closed and removed automatically when a closed issue or pull request is reopened*.
+
 5. **https://github.com/leovipin1/Life-Engine-Designer/labels/Status%3A%20Developing** - *Applied automatically to an issue or pull request when an assignee is assigned to it and removed automatically when an issue or pull request is closed*.
+
 6. **https://github.com/leovipin1/Life-Engine-Designer/labels/Status%3A%20Incomplete** - *Applied automatically to a new issue when submitted and removed automatically when an assignee is assigned to the issue*.
+
 7. **https://github.com/leovipin1/Life-Engine-Designer/labels/Status%3A%20Reopened** - *Applied automatically when an issue or pull request is reopened*.
+
 8. **https://github.com/leovipin1/Life-Engine-Designer/labels/Status%3A%20Wont%20Do%2FFix** - *To be applied to an issue or pull request when it cannot be either implemented or fixed or merged*.
+
 9. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20Bug** - *Applied automatically to a new issue(whose title begins with **`[Bug]:`**)*.
+
 10. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20BugFix** - *Applied automatically to a new pull request(whose commit message title begins with **`bf:`**)*.
+
 11. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20Documentation** - *Applied automatically to a new issue(whose title begins with **`[Documentation]:`**) or new pull request(whose commit message title begins with **`dc:`**)*.
+
 12. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20Epic** - *Applied automatically to a new issue(whose title begins with **`[Epic]:`**) or new pull request(whose commit message title begins with **`ep:`**)*.
+
 13. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20Feature** - *Applied automatically to a new issue(whose title begins with **`[Feature]:`**) or new pull request(whose commit message title begins with **`ft:`**)*.
+
 14. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20HotFix** - *Applied automatically to a new pull request(whose commit message title begins with **`hf:`**)*.
+
 15. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20Miscellaneous** - *Applied automatically to a new issue(whose title begins with **`[Misc]:`)** or new pull request(whose commit message title begins with **`ms:`**). To be applied to an issue or pull request which cannot be categorised in any of the **`Type:`** labels*.
+
 16. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20Repo** - *Applied automatically to a new issue(whose title begins with **`[Repo]:`**) or new pull request(whose commit message title begins with **`rp:`**)*.
+
 17. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20Task** - *Applied automatically to a new issue(whose title begins with **`[Task]:`**) or new pull request(whose commit message title begins with **`tk:`**)*.
+
 18. **https://github.com/leovipin1/Life-Engine-Designer/labels/Type%3A%20UserStory** - *Applied automatically to a new issue(whose title begins with **`[User Story]:`**) or new pull request(whose commit message title begins with **`us:`**)*.
 
 ***Note:***
 1. The labels **`must not`** be added to an issue or pull request when submitting or closing. The respective labels will be applied once submitted as per the issue's title or commit message of the pull request.
+
 2. An issue or pull request **`must not`** be added to any project at the time of submission. It will automatically be added to the **`Life Engine Designer Plan`** project.
+
 3. An issue or pull request **`must not`** be assigned to any person at the time of submission.
+
 4. Once an assignee is assigned to an issue or pull request, it is automatically moved from the **`Backlog`** to the **`Developing`** status in the project.
+
 5. Once an issue or pull request is closed, it is automatically moved from the **`Developing`** to the **`Finished`** status in the project.
 
 ### Issues
@@ -124,9 +146,11 @@ Commit the changes once you are happy using the **[commit message title conventi
 ### Pull Request
 
 When you're finished with the changes, create a pull request known as a PR.
-- Fill the **`Pull Request`** template. This template helps users understand your changes and the purpose of your pull request.
-- Don't forget to **[link PR to issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)** if you are implementing/solving one.
-- Only merge the pull request once all the status checks are complete, as they manage the labels and project status movement.
+1.  Fill the **`Pull Request`** template. This template helps users understand your changes and the purpose of your pull request.
+
+2.  Don't forget to **[link PR to issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)** if you are implementing/solving one.
+
+3. Only merge the pull request once all the status checks are complete, as they manage the labels and project status movement.
 
 #### Your PR is merged
 
@@ -145,13 +169,21 @@ The break up of the convention is as below.
 As we use automatic labelling for pull requests, every commit message must begin with the following.
 
 1. **`ep:`** - *The commit message beginning with this indicates that the commit is for completing an Epic issue*.
+
 2. **`ft:`** - *The commit message beginning with this indicates that the commit is for completing a Feature issue*.
+
 3. **`us:`** - *The commit message beginning with this indicates that the commit is for completing a User Story issue*.
+
 4. **`tk:`** - *The commit message beginning with this indicates that the commit is for completing a Task issue*.
+
 5. **`bf:`** - *The commit message beginning with this indicates that the commit is for fixing a bug issue during program development*.
+
 6. **`hf:`** - *The commit message beginning with this indicates that the commit is for fixing a bug issue during program production*.
+
 7. **`dc:`** - *The commit message beginning with this indicates that the commit is for completing a Documentation issue*.
+
 8. **`rp:`** - *The commit message beginning with this indicates that the commit is for updating the Repository structure*.
+
 9. **`ms:`** - *The commit message beginning with this indicates that the commit is for completing a Miscellaneous issue*.
 
 - **`#[##]`** - *The issue number for which this commit is begin done*.
