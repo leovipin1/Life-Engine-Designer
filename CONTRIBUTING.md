@@ -10,9 +10,9 @@ Use the table of contents on the top left corner of this document to get to a sp
 
 To get an overview of the project, read the **[README](README.md)**. Here are some resources to help you start the Life Engine Designer program.
 
-- **`[Program's initial setup steps](update the link for the initial steps document)`**
+- **[Program's initial setup steps](docs/initial-steps.md)**
 
-- **`[Program's documentation](update the link for program's documentation landing page)`**
+- **[Program's documentation](docs/README.md)**
 
 ## Getting started
 
